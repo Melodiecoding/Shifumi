@@ -1,0 +1,79 @@
+html, body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    background-color: #222034;
+    text-align: center;
+    font-family: monospace;
+    color: #fbf236;
+    font-size: xx-large;
+    overflow: hidden;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.battle {
+    min-height: 33vh;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.reset {
+    transform: none;
+}
+
+.btn-restart {
+    background-color: #fbf236;
+    font-size: x-large;
+}
+
+.translate-left {
+    animation-duration: 1s;
+    animation-name: slideLeft;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translate(-1000px, 0px);
+    }
+
+    to {
+        transform: translate( 0px, 0px);
+    }
+}
+
+.translate-right {
+    animation-duration: 1s;
+    animation-name: slideRight;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translate(1000px, 0px);
+    }
+
+    to {
+        transform: translate( 0px, 0px);
+    }
+}
